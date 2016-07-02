@@ -1,0 +1,41 @@
+@import 'reset';
+@import 'variables';
+
+
+//1.  Page          ***********************************************************************************
+.page {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+} 
+
+//2.  Site Header   ***********************************************************************************
+.site-header {
+  height: 80px;
+  background: $color10;
+  
+  .site-title {
+    color: #fff;
+    font-family: $fuente;
+  }
+}
+
+//3.  Content       ***********************************************************************************
+.content {
+  background:#fefefe;
+}
+
+//4.  Site Footer   ***********************************************************************************
+.site-footer {
+  background: $color2;
+  height: 180px;
+}
+
+//5.  Layout
+
+.container {
+  width: 90%;
+  min-width: 300px;
+  margin: 0 auto;
+}

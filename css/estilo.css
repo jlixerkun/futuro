@@ -1,0 +1,122 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import 'https://fonts.googleapis.com/css?family=Days+One|Dosis|Farsan';
+/* line 5, C:/xampp/htdocs/futuro/css/_reset.scss */
+*, *:after, *:before {
+  box-sizing: border-box; }
+
+/* line 20, C:/xampp/htdocs/futuro/css/_reset.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+/* line 30, C:/xampp/htdocs/futuro/css/_reset.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+/* line 33, C:/xampp/htdocs/futuro/css/_reset.scss */
+body {
+  line-height: 1; }
+
+/* line 36, C:/xampp/htdocs/futuro/css/_reset.scss */
+ol, ul {
+  list-style: none; }
+
+/* line 39, C:/xampp/htdocs/futuro/css/_reset.scss */
+blockquote, q {
+  quotes: none; }
+
+/* line 43, C:/xampp/htdocs/futuro/css/_reset.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+/* line 47, C:/xampp/htdocs/futuro/css/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 52, C:/xampp/htdocs/futuro/css/_reset.scss */
+h1 {
+  font-size: 36px;
+  line-height: 40px; }
+
+/* line 57, C:/xampp/htdocs/futuro/css/_reset.scss */
+h2 {
+  font-size: 30px;
+  line-height: 40px; }
+
+/* line 62, C:/xampp/htdocs/futuro/css/_reset.scss */
+h3 {
+  font-size: 24px;
+  line-height: 40px; }
+
+/* line 67, C:/xampp/htdocs/futuro/css/_reset.scss */
+h4 {
+  font-size: 18px;
+  line-height: 20px; }
+
+/* Won't be used here */
+/* line 74, C:/xampp/htdocs/futuro/css/_reset.scss */
+h5 {
+  font-size: 14px;
+  line-height: 20px; }
+
+/* line 79, C:/xampp/htdocs/futuro/css/_reset.scss */
+h6 {
+  font-size: 12px;
+  line-height: 20px; }
+
+/* line 6, C:/xampp/htdocs/futuro/css/estilo.scss */
+.page {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh; }
+
+/* line 14, C:/xampp/htdocs/futuro/css/estilo.scss */
+.site-header {
+  height: 80px;
+  background: #240400; }
+  /* line 18, C:/xampp/htdocs/futuro/css/estilo.scss */
+  .site-header .site-title {
+    color: #fff;
+    font-family: "Dosis", sans-serif; }
+
+/* line 25, C:/xampp/htdocs/futuro/css/estilo.scss */
+.content {
+  background: #fefefe; }
+
+/* line 30, C:/xampp/htdocs/futuro/css/estilo.scss */
+.site-footer {
+  background: #89A194;
+  height: 180px; }
+
+/* line 37, C:/xampp/htdocs/futuro/css/estilo.scss */
+.container {
+  width: 90%;
+  min-width: 300px;
+  margin: 0 auto; }
+
+/*# sourceMappingURL=estilo.css.map */
