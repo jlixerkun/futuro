@@ -1,31 +1,73 @@
 @import 'reset';
-@import 'variables';
-
-
+@import 'corevariables';
 //1.  Page          ***********************************************************************************
 .page {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   min-height: 100vh;
-} 
+//  font-family: 'Arial', 'Trebuchet', sans-serif;
+  font-family: $fuente;
+}
 
 //2.  Site Header   ***********************************************************************************
 .site-header {
-  height: 80px;
-  background: $color10;
-  
+  //  height: 80px;
+  background: $color1;
+  color: #fff;
   .site-title {
-    color: #fff;
     font-family: $fuente;
   }
+  .site-tagline {
+    font-size: 0.7rem;
+    letter-spacing: 1px;
+  }
+}
+.top-nav {
+  a {
+    color: #cdcfea;
+    text-decoration: none;
+    padding: 1rem 1rem 1.6rem;
+    &:hover {
+      color: #fff;
+      border-bottom: 4px solid #fff;
+    }
+    &:visited,
+    &:link,
+    &:active {
+    }
+  }
+}
+.menu {
+  li {
+    display: inline-block;
+  }
+}
+
+.brand {
+  padding: 1rem 0;
+  display: inline-block;
 }
 
 //3.  Content       ***********************************************************************************
 .content {
-  background:#fefefe;
+  background: #fefefe;
 }
 
+.banner {
+  background-size: cover;
+  *{
+    font-family: $fuente;
+    color: $color1;
+  }
+  h2 {
+//    font-size: 3rem;
+  }
+}
+.b1 {
+  background-image: url("../img/family-14.jpg");
+  height: 500px;
+}
 //4.  Site Footer   ***********************************************************************************
 .site-footer {
   background: $color2;
@@ -33,9 +75,21 @@
 }
 
 //5.  Layout
-
 .container {
-  width: 90%;
+  width: 97%;
   min-width: 300px;
   margin: 0 auto;
+}
+.flex-row-sbtwn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.flex-center-both {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.text-center {
+  text-align: center;
 }
