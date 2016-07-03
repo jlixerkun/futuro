@@ -6,7 +6,7 @@
   flex-direction: column;
   justify-content: space-between;
   min-height: 100vh;
-//  font-family: 'Arial', 'Trebuchet', sans-serif;
+  //  font-family: 'Arial', 'Trebuchet', sans-serif;
   font-family: $fuente;
 }
 
@@ -15,14 +15,12 @@
   //  height: 80px;
   background: $color1;
   color: #fff;
-  .site-title {
-    font-family: $fuente;
-  }
-  .site-tagline {
-    font-size: 0.7rem;
-    letter-spacing: 1px;
+  a {
+    color: #fff;
+    text-decoration: none;
   }
 }
+
 .top-nav {
   a {
     color: #cdcfea;
@@ -34,10 +32,10 @@
     }
     &:visited,
     &:link,
-    &:active {
-    }
+    &:active {}
   }
 }
+
 .menu {
   li {
     display: inline-block;
@@ -47,6 +45,13 @@
 .brand {
   padding: 1rem 0;
   display: inline-block;
+  .site-title {
+    font-family: $fuente;
+  }
+  .site-tagline {
+    font-size: 0.7rem;
+    letter-spacing: 1px;
+  }
 }
 
 //3.  Content       ***********************************************************************************
@@ -56,40 +61,88 @@
 
 .banner {
   background-size: cover;
-  *{
+  * {
     font-family: $fuente;
     color: $color1;
   }
-  h2 {
-//    font-size: 3rem;
-  }
 }
+
 .b1 {
   background-image: url("../img/family-14.jpg");
   height: 500px;
 }
+
+.login-banner {
+  height: 100vh;
+}
+
 //4.  Site Footer   ***********************************************************************************
 .site-footer {
   background: $color2;
   height: 180px;
 }
 
-//5.  Layout
+//5.  Layout        ***********************************************************************************
+.login-container {
+  width: 300px;
+  background: #fff;
+  padding: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 0 12px -2px $color1;
+  border: 1px solid $color3;
+}
+
 .container {
   width: 97%;
   min-width: 300px;
   margin: 0 auto;
 }
+
 .flex-row-sbtwn {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.flex-row-sarnd {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.blurbs {
+  padding: 2rem 0;
+  background: $color3;
 }
 .flex-center-both {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .text-center {
   text-align: center;
+}
+
+.campo {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  input:not([type="checkbox"]) {
+    width: 100%;
+    border: 1px solid $color3;
+    padding: 5px;
+    border-radius: 3px;
+  }
+  label {
+    font-size: 0.85rem;
+  }
+  &.check {
+    justify-content: flex-start;
+  }
+  &.submit {
+    input {
+      width: 48%;
+    }
+  }
 }
