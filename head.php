@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="scss/font-awesome.css" />
   <link rel="stylesheet" href="css/estilo.css" />
-  <script src="../libs/jQuery/jquery-1.12.4.min.js"></script>
+  <script src="js/jquery-1.12.4.min.js"></script>
   <title>Futuro | Economía solidaria</title>
 
 </head>
