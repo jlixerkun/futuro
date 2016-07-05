@@ -17,7 +17,7 @@
 
       <div class="banner login-banner b1 flex-center-both">
         <div class="login-container">
-          <a href="#" class="brand">
+          <a href="//localhost/futuro" class="brand">
             <h1 class="site-title">Futuro</h1>
             <span class="site-tagline">Economía solidaria para todos</span>
           </a>
@@ -30,7 +30,7 @@
             </div>
             <div class="campo check">
               <input type="checkbox" name="guardar" >
-              <label for="guardar">Recuérdame en este equipo</label>
+              <label for="guardar">Recordarme en este equipo</label>
             </div>
             <div class="campo submit">
               <input type="submit" name="login" value="Iniciar sesión" >

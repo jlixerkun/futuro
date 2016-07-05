@@ -24,70 +24,75 @@ time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
+  font-size: 16px;
   font: inherit;
   vertical-align: baseline; }
 
 /* HTML5 display-role reset for older browsers */
-/* line 30, C:/xampp/htdocs/futuro/css/_reset.scss */
+/* line 31, C:/xampp/htdocs/futuro/css/_reset.scss */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block; }
 
-/* line 33, C:/xampp/htdocs/futuro/css/_reset.scss */
+/* line 34, C:/xampp/htdocs/futuro/css/_reset.scss */
 body {
   line-height: 1; }
 
-/* line 36, C:/xampp/htdocs/futuro/css/_reset.scss */
+/* line 37, C:/xampp/htdocs/futuro/css/_reset.scss */
 ol, ul {
   list-style: none; }
 
-/* line 39, C:/xampp/htdocs/futuro/css/_reset.scss */
+/* line 40, C:/xampp/htdocs/futuro/css/_reset.scss */
 blockquote, q {
   quotes: none; }
 
-/* line 43, C:/xampp/htdocs/futuro/css/_reset.scss */
+/* line 44, C:/xampp/htdocs/futuro/css/_reset.scss */
 blockquote:before, blockquote:after,
 q:before, q:after {
   content: '';
   content: none; }
 
-/* line 47, C:/xampp/htdocs/futuro/css/_reset.scss */
+/* line 48, C:/xampp/htdocs/futuro/css/_reset.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0; }
 
 /* line 52, C:/xampp/htdocs/futuro/css/_reset.scss */
+p {
+  font-size: 16px;
+  line-height: 20px; }
+
+/* line 56, C:/xampp/htdocs/futuro/css/_reset.scss */
 h1 {
   font-size: 36px;
   line-height: 40px; }
 
-/* line 57, C:/xampp/htdocs/futuro/css/_reset.scss */
+/* line 61, C:/xampp/htdocs/futuro/css/_reset.scss */
 h2 {
   font-size: 30px;
   line-height: 40px; }
 
-/* line 62, C:/xampp/htdocs/futuro/css/_reset.scss */
+/* line 66, C:/xampp/htdocs/futuro/css/_reset.scss */
 h3 {
   font-size: 24px;
   line-height: 40px; }
 
-/* line 67, C:/xampp/htdocs/futuro/css/_reset.scss */
+/* line 71, C:/xampp/htdocs/futuro/css/_reset.scss */
 h4 {
   font-size: 18px;
   line-height: 20px; }
 
-/* line 72, C:/xampp/htdocs/futuro/css/_reset.scss */
+/* line 76, C:/xampp/htdocs/futuro/css/_reset.scss */
 h5 {
   font-size: 14px;
   line-height: 20px; }
 
-/* line 77, C:/xampp/htdocs/futuro/css/_reset.scss */
+/* line 81, C:/xampp/htdocs/futuro/css/_reset.scss */
 h6 {
   font-size: 12px;
   line-height: 20px; }
 
-/* line 81, C:/xampp/htdocs/futuro/css/_reset.scss */
+/* line 85, C:/xampp/htdocs/futuro/css/_reset.scss */
 a {
   text-decoration: none; }
 
@@ -136,31 +141,35 @@ a {
 
 /* line 58, C:/xampp/htdocs/futuro/css/estilo.scss */
 .content {
-  background: #fefefe; }
+  background: #fcfcfc; }
 
-/* line 62, C:/xampp/htdocs/futuro/css/estilo.scss */
+/* line 61, C:/xampp/htdocs/futuro/css/estilo.scss */
+.page-title {
+  margin: 1rem 0; }
+
+/* line 64, C:/xampp/htdocs/futuro/css/estilo.scss */
 .banner {
   background-size: cover; }
-  /* line 64, C:/xampp/htdocs/futuro/css/estilo.scss */
+  /* line 66, C:/xampp/htdocs/futuro/css/estilo.scss */
   .banner * {
     font-family: "Dosis", sans-serif;
     color: #322938; }
 
-/* line 70, C:/xampp/htdocs/futuro/css/estilo.scss */
+/* line 72, C:/xampp/htdocs/futuro/css/estilo.scss */
 .b1 {
   background-image: url("../img/family-14.jpg");
   height: 500px; }
 
-/* line 75, C:/xampp/htdocs/futuro/css/estilo.scss */
+/* line 77, C:/xampp/htdocs/futuro/css/estilo.scss */
 .login-banner {
   height: 100vh; }
 
-/* line 80, C:/xampp/htdocs/futuro/css/estilo.scss */
+/* line 82, C:/xampp/htdocs/futuro/css/estilo.scss */
 .site-footer {
   background: #89A194;
   height: 180px; }
 
-/* line 86, C:/xampp/htdocs/futuro/css/estilo.scss */
+/* line 88, C:/xampp/htdocs/futuro/css/estilo.scss */
 .login-container {
   width: 300px;
   background: #fff;
@@ -169,59 +178,117 @@ a {
   box-shadow: 0 0 12px -2px #322938;
   border: 1px solid #CFC89A; }
 
-/* line 95, C:/xampp/htdocs/futuro/css/estilo.scss */
+/* line 97, C:/xampp/htdocs/futuro/css/estilo.scss */
 .container {
   width: 97%;
   min-width: 300px;
   margin: 0 auto; }
 
-/* line 101, C:/xampp/htdocs/futuro/css/estilo.scss */
+/* line 103, C:/xampp/htdocs/futuro/css/estilo.scss */
 .flex-row-sbtwn {
   display: flex;
   justify-content: space-between;
-  align-items: center; }
+  align-items: center;
+  flex-direction: row; }
+  /* line 108, C:/xampp/htdocs/futuro/css/estilo.scss */
+  .flex-row-sbtwn.top {
+    align-items: flex-start; }
 
-/* line 107, C:/xampp/htdocs/futuro/css/estilo.scss */
+/* line 113, C:/xampp/htdocs/futuro/css/estilo.scss */
+.column {
+  flex: 1; }
+
+/* line 117, C:/xampp/htdocs/futuro/css/estilo.scss */
 .flex-row-sarnd {
+  flex-direction: row;
   display: flex;
   justify-content: space-around;
   align-items: center; }
+  /* line 122, C:/xampp/htdocs/futuro/css/estilo.scss */
+  .flex-row-sarnd.top {
+    align-items: flex-start; }
 
-/* line 112, C:/xampp/htdocs/futuro/css/estilo.scss */
-.blurbs {
-  padding: 2rem 0;
-  background: #CFC89A; }
-
-/* line 116, C:/xampp/htdocs/futuro/css/estilo.scss */
+/* line 126, C:/xampp/htdocs/futuro/css/estilo.scss */
 .flex-center-both {
   display: flex;
   justify-content: center;
   align-items: center; }
+  /* line 130, C:/xampp/htdocs/futuro/css/estilo.scss */
+  .flex-center-both.top {
+    align-items: flex-start; }
 
-/* line 122, C:/xampp/htdocs/futuro/css/estilo.scss */
+/* line 134, C:/xampp/htdocs/futuro/css/estilo.scss */
+.blurbs {
+  padding: 2rem 0;
+  background: #CFC89A; }
+  /* line 137, C:/xampp/htdocs/futuro/css/estilo.scss */
+  .blurbs .blurb {
+    width: 20%;
+    min-width: 300px;
+    color: #CC883A; }
+    /* line 141, C:/xampp/htdocs/futuro/css/estilo.scss */
+    .blurbs .blurb p {
+      color: #A14016; }
+
+/* line 147, C:/xampp/htdocs/futuro/css/estilo.scss */
 .text-center {
   text-align: center; }
 
-/* line 126, C:/xampp/htdocs/futuro/css/estilo.scss */
+/* line 150, C:/xampp/htdocs/futuro/css/estilo.scss */
+label {
+  font-size: 0.85rem;
+  line-height: 1.5rem; }
+
+/* line 154, C:/xampp/htdocs/futuro/css/estilo.scss */
 .campo {
   margin-bottom: 1rem;
   display: flex;
   align-items: center;
   justify-content: space-between; }
-  /* line 131, C:/xampp/htdocs/futuro/css/estilo.scss */
+  /* line 159, C:/xampp/htdocs/futuro/css/estilo.scss */
+  .campo * {
+    font-family: "Dosis", sans-serif; }
+  /* line 162, C:/xampp/htdocs/futuro/css/estilo.scss */
+  .campo select {
+    width: 100%;
+    border: 1px solid #CFC89A;
+    padding: 5px;
+    border-radius: 3px; }
+  /* line 168, C:/xampp/htdocs/futuro/css/estilo.scss */
   .campo input:not([type="checkbox"]) {
     width: 100%;
     border: 1px solid #CFC89A;
     padding: 5px;
     border-radius: 3px; }
-  /* line 137, C:/xampp/htdocs/futuro/css/estilo.scss */
+  /* line 174, C:/xampp/htdocs/futuro/css/estilo.scss */
   .campo label {
-    font-size: 0.85rem; }
-  /* line 140, C:/xampp/htdocs/futuro/css/estilo.scss */
+    font-size: 0.85rem;
+    line-height: 1.3rem; }
+  /* line 178, C:/xampp/htdocs/futuro/css/estilo.scss */
   .campo.check {
     justify-content: flex-start; }
-  /* line 144, C:/xampp/htdocs/futuro/css/estilo.scss */
+  /* line 182, C:/xampp/htdocs/futuro/css/estilo.scss */
   .campo.submit input {
     width: 48%; }
+
+/* line 188, C:/xampp/htdocs/futuro/css/estilo.scss */
+.simulacion {
+  width: 300px;
+  margin: 1rem auto;
+  box-shadow: 0 0 10px -2px #CFC89A; }
+  /* line 192, C:/xampp/htdocs/futuro/css/estilo.scss */
+  .simulacion td, .simulacion th {
+    border-radius: 3px;
+    text-align: center;
+    border: 1px solid #CFC89A;
+    padding: 0.5rem 1rem;
+    color: #89A194; }
+  /* line 199, C:/xampp/htdocs/futuro/css/estilo.scss */
+  .simulacion tr:nth-of-type(2n) {
+    background: #f0eedf; }
+  /* line 202, C:/xampp/htdocs/futuro/css/estilo.scss */
+  .simulacion th {
+    font-weight: 600;
+    color: #CC883A; }
 
 /*# sourceMappingURL=estilo.css.map */

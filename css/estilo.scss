@@ -56,9 +56,11 @@
 
 //3.  Content       ***********************************************************************************
 .content {
-  background: #fefefe;
+  background: #fcfcfc;
 }
-
+.page-title {
+  margin: 1rem 0;
+}
 .banner {
   background-size: cover;
   * {
@@ -102,32 +104,67 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-direction: row;
+  &.top{
+    align-items: flex-start;
+  }
+}
+
+.column {
+  flex:1;
 }
 
 .flex-row-sarnd {
+  flex-direction: row;
   display: flex;
   justify-content: space-around;
   align-items: center;
-}
-.blurbs {
-  padding: 2rem 0;
-  background: $color3;
+  &.top{
+    align-items: flex-start;
+  }
 }
 .flex-center-both {
   display: flex;
   justify-content: center;
   align-items: center;
+  &.top{
+    align-items: flex-start;
+  }
+}
+.blurbs {
+  padding: 2rem 0;
+  background: $color3;
+  .blurb {
+    width: 20%;
+    min-width: 300px;
+    color: $color4;
+    p{
+      color: $color5;
+    }
+  }
 }
 
 .text-center {
   text-align: center;
 }
-
+label {
+    font-size: 0.85rem;
+    line-height: 1.5rem;
+  }
 .campo {
   margin-bottom: 1rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  * {
+    font-family: $fuente;
+  }
+  select {
+    width: 100%;
+    border: 1px solid $color3;
+    padding: 5px;
+    border-radius: 3px;
+  }
   input:not([type="checkbox"]) {
     width: 100%;
     border: 1px solid $color3;
@@ -136,6 +173,7 @@
   }
   label {
     font-size: 0.85rem;
+    line-height: 1.3rem;
   }
   &.check {
     justify-content: flex-start;
@@ -145,4 +183,25 @@
       width: 48%;
     }
   }
+}
+
+.simulacion {
+  width: 300px;
+  margin: 1rem auto;
+  box-shadow: 0 0 10px -2px $color3;
+  td,th {
+    border-radius: 3px;
+    text-align: center;
+    border: 1px solid $color3;
+    padding: 0.5rem 1rem;
+    color: $color2;
+  }
+  tr:nth-of-type(2n) {
+    background: lighten($color3,20%);
+  }
+  th {
+    font-weight: 600;
+    color: $color4;
+  }
+  
 }
